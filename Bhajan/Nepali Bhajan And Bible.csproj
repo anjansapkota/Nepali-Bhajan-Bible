@@ -1,0 +1,305 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{5EFADC67-E516-48C3-A1B1-6CC3FF63C021}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Bhajan</RootNamespace>
+    <AssemblyName>Nepali Bhajan And Bible</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+    <TargetFrameworkProfile />
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ProductName>New Nepali Bhajan &amp; Bible Software</ProductName>
+    <PublisherName>New Nepali Bhajan &amp; Bible Software</PublisherName>
+    <SuiteName>New Nepali Bhajan &amp; Bible Software</SuiteName>
+    <ApplicationRevision>109</ApplicationRevision>
+    <ApplicationVersion>100.19.195.%2a</ApplicationVersion>
+    <UseApplicationTrust>true</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+    <AllowUnsafeBlocks>true</AllowUnsafeBlocks>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>C870BF9CE8E6D7EE024FC30F46813F3E276A60ED</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>Bhajan_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>false</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>true</SignManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>Nepali Bhajan And Bible.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup>
+    <StartupObject>Bhajan.Program</StartupObject>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignAssembly>true</SignAssembly>
+  </PropertyGroup>
+  <PropertyGroup>
+    <AssemblyOriginatorKeyFile>Bhajan_TemporaryKey.pfx</AssemblyOriginatorKeyFile>
+  </PropertyGroup>
+  <PropertyGroup />
+  <PropertyGroup>
+    <TargetZone>LocalIntranet</TargetZone>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationManifest>app.manifest</ApplicationManifest>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=13.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.13.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Device" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Classess\AES.cs" />
+    <Compile Include="Classess\CustomInfoLabel.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classess\EnglishBibleMapper.cs" />
+    <Compile Include="Classess\GA.cs" />
+    <Compile Include="Classess\HymMapper.cs" />
+    <Compile Include="Classess\KokilaFont.cs" />
+    <Compile Include="Classess\MappingFunctions.cs" />
+    <Compile Include="Classess\BibleMapper.cs" />
+    <Compile Include="Classess\MyCombo.cs">
+      <SubType>Component</SubType>
+    </Compile>
+    <Compile Include="Classess\MyDialogBox.cs" />
+    <Compile Include="Classess\Ripper.cs" />
+    <Compile Include="Classess\SoftwareInfo.cs" />
+    <Compile Include="Classess\UpdatesChecker.cs" />
+    <Compile Include="Home.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Motor\Bhajan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Motor\Bhajan.Designer.cs">
+      <DependentUpon>Bhajan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Models.cs" />
+    <Compile Include="Motor\AddHymsView.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Motor\AddHymsView.Designer.cs">
+      <DependentUpon>AddHymsView.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Motor\Bible.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Motor\Bible.Designer.cs">
+      <DependentUpon>Bible.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Motor\BibleVerseDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Motor\BibleVerseDisplay.Designer.cs">
+      <DependentUpon>BibleVerseDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Motor\CustomInformation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Motor\CustomInformation.Designer.cs">
+      <DependentUpon>CustomInformation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Motor\CustomInformationDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Motor\CustomInformationDisplay.Designer.cs">
+      <DependentUpon>CustomInformationDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Motor\HymDisplay.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Motor\HymDisplay.Designer.cs">
+      <DependentUpon>HymDisplay.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Motor\NewUserSurvey.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Motor\NewUserSurvey.Designer.cs">
+      <DependentUpon>NewUserSurvey.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Motor\Bhajan.resx">
+      <DependentUpon>Bhajan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Motor\AddHymsView.resx">
+      <DependentUpon>AddHymsView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Motor\Bible.resx">
+      <DependentUpon>Bible.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Motor\BibleVerseDisplay.resx">
+      <DependentUpon>BibleVerseDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Motor\CustomInformation.resx">
+      <DependentUpon>CustomInformation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Motor\CustomInformationDisplay.resx">
+      <DependentUpon>CustomInformationDisplay.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Motor\HymDisplay.resx">
+      <DependentUpon>HymDisplay.cs</DependentUpon>
+      <Generator>PublicResXFileCodeGenerator</Generator>
+      <LastGenOutput>HymDisplay1.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Motor\NewUserSurvey.resx">
+      <DependentUpon>NewUserSurvey.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="29e77222-451d-4eed-aab5-85aeb562fa57.ANX" />
+    <None Include="88feb452-4df2-4a88-827d-9e42e6851d29.ANX" />
+    <None Include="app.manifest" />
+    <None Include="Bhajan_TemporaryKey.pfx" />
+    <None Include="f29f466b-10ae-452e-8d05-796ca68d0af9.ANX" />
+    <None Include="kokila.ttf" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="Resources\DSC1.jpg" />
+    <None Include="Resources\DSC10.jpg" />
+    <None Include="Resources\DSC11.jpg" />
+    <None Include="Resources\DSC12.jpg" />
+    <None Include="Resources\DSC13.jpg" />
+    <None Include="Resources\DSC14.jpg" />
+    <None Include="Resources\DSC15.jpg" />
+    <None Include="Resources\DSC16.jpg" />
+    <None Include="Resources\DSC17.jpg" />
+    <None Include="Resources\DSC18.jpg" />
+    <None Include="Resources\DSC19.jpg" />
+    <None Include="Resources\DSC2.jpg" />
+    <None Include="Resources\DSC20.jpg" />
+    <None Include="Resources\DSC21.jpg" />
+    <None Include="Resources\DSC22.jpg" />
+    <None Include="Resources\DSC23.jpg" />
+    <None Include="Resources\DSC24.jpg" />
+    <None Include="Resources\DSC25.jpg" />
+    <None Include="Resources\DSC26.jpg" />
+    <None Include="Resources\DSC27.jpg" />
+    <None Include="Resources\DSC28.jpg" />
+    <None Include="Resources\DSC29.jpg" />
+    <None Include="Resources\DSC3.jpg" />
+    <None Include="Resources\DSC30.jpg" />
+    <None Include="Resources\DSC31.jpg" />
+    <None Include="Resources\DSC32.jpg" />
+    <None Include="Resources\DSC33.jpg" />
+    <None Include="Resources\DSC35.jpg" />
+    <None Include="Resources\DSC36.jpg" />
+    <None Include="Resources\DSC37.jpg" />
+    <None Include="Resources\DSC4.jpg" />
+    <None Include="Resources\DSC5.jpg" />
+    <None Include="Resources\DSC6.jpg" />
+    <None Include="Resources\DSC7.jpg" />
+    <None Include="Resources\DSC8.jpg" />
+    <None Include="Resources\DSC9.jpg" />
+    <None Include="Resources\kokila.ttf" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.7.2">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.7.2 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Nepali Bhajan And Bible.ico" />
+    <Content Include="Resources\DSC34.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Updater\UpdaterNBB.csproj">
+      <Project>{4f3021e2-0418-4362-ad39-a5fdba4f9013}</Project>
+      <Name>UpdaterNBB</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
